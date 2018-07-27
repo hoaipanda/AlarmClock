@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/imAlarm" android:title="Alarm" android:icon="@drawable/alarm"/>
+    <item android:id="@+id/imCalendar" android:title="Calendar" android:icon="@drawable/calendar"/>
+    <item android:id="@+id/imScene" android:title="Scene" android:icon="@drawable/scene"/>
+</menu>

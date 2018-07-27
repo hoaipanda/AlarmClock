@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/imTime" android:title="Timer"/>
+    <item android:id="@+id/imStopwatch" android:title="Stopwatch"/>
+    <item android:id="@+id/imNight" android:title="Bedside Clock"/>
+    <item android:id="@+id/imRate" android:title="Rate app"/>
+    <item android:id="@+id/imPolicy" android:title="Policy"/>
+</menu>
