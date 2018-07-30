@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    tools:context=".MainActivity">
+    tools:context=".activity.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <RelativeLayout
         android:id="@+id/lyMenu"
-        android:background="#795548"
+        android:background="@color/myColor"
         android:layout_width="match_parent"
         android:layout_height="70dp">
         <ImageView

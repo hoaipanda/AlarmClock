@@ -1,5 +1,6 @@
-package com.example.pc.alarmclock;
+package com.example.pc.alarmclock.activity;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
@@ -13,8 +14,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.pc.alarmclock.R;
+import com.example.pc.alarmclock.adapter.ViewPagerAdapter;
 import com.example.pc.alarmclock.fragment.SceneFragment;
-import com.example.pc.alarmclock.fragment.StopWatchFragment;
+import com.example.pc.alarmclock.fragment.CalendarFragment;
 import com.example.pc.alarmclock.fragment.TimeFragment;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private void setupViewPager(ViewPager viewPager) {
         ViewPagerAdapter adapter = new ViewPagerAdapter(getSupportFragmentManager());
         adapter.addFragment(new TimeFragment());
-        adapter.addFragment(new StopWatchFragment());
+        adapter.addFragment(new CalendarFragment());
         adapter.addFragment(new SceneFragment());
         viewPager.setCurrentItem(0);
         viewPager.setAdapter(adapter);
@@ -128,10 +131,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()){
             case R.id.imTime:
+                Intent intent1 = new Intent(MainActivity.this,TimerActivity.class);
+                startActivity(intent1);
                 break;
             case R.id.imStopwatch:
+                Intent intent2 = new Intent(MainActivity.this,StopWatchActivity.class);
+                startActivity(intent2);
                 break;
             case R.id.imNight:
+                Intent intent3 = new Intent(MainActivity.this,BesideNightActivity.class);
+                startActivity(intent3);
                 break;
             case R.id.imRate:
                 break;

@@ -5,7 +5,7 @@ android {
     defaultConfig {
         applicationId "com.example.pc.alarmclock"
         minSdkVersion 15
-        targetSdkVersion 27
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -28,4 +28,7 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.android.support:design:27.1.1'
     implementation project(':pickerview')
+    implementation 'com.android.support:recyclerview-v7:27.1.1'
+    implementation 'com.prolificinteractive:material-calendarview:1.4.0'
+    implementation 'com.tomerrosenfeld.customanalogclockview:custom-analog-clock-view:1.1'
 }

@@ -9,14 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TimerActivity"></activity>
+        <activity android:name=".activity.TimerActivity" />
+        <activity android:name=".activity.StopWatchActivity" />
+        <activity android:name=".activity.BesideNightActivity" />
+        <activity android:name=".activity.CreateNoteActivity"></activity>
     </application>
 
 </manifest>
